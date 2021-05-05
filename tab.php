@@ -1,8 +1,27 @@
 <?php
     $etudiants = [
-        ['name' => 'Hammami', 'firstname' => 'Marwen'],
-        ['name' => 'Ben Attia', 'firstname' => 'Montasar'],
+        [
+            'name' => 'Hammami',
+            'firstname' => 'Marwen'
+        ],
+        [
+            'name' => 'Ben Attia',
+            'firstname' => 'Montasar'
+        ],
     ];
+    $tab2 =  [
+        'name' => 'Hammami',
+        'firstname' => 'Marwen'
+    ];
+    $cle = array_search('Hammami', $tab2);
+    echo $cle;
+    $cle2 = array_search('aymen', $tab2);
+    if($cle2) {
+        echo $cle2;
+    } else {
+        echo 'champs innexistant';
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +39,7 @@
     <?php
 
         $tableau = ['Marwen', 'Montassar', 'Mariem', 'Houssem', 'Ons', 'Nawel'];
+        $tableau[0];
     ?>
 
     <table border="2">
